@@ -15,7 +15,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/images/brand/favicon.ico')}}" />
 
     <!-- TITLE -->
-    <title>{{ __('Login') }}</title>
+    <title>{{ __('Login') }} # {{ config('app.name', 'Laravel') }}</title>
 
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="{{asset('backend/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />

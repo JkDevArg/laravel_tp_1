@@ -15,7 +15,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/images/brand/favicon.ico')}}" />
 
     <!-- TITLE -->
-    <title>{{ __('Register') }} # FetuDev</title>
+    <title>{{ __('Register') }} # {{ config('app.name', 'Laravel') }}</title>
 
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="{{asset('backend/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" />
@@ -96,7 +96,7 @@
                                 </span>
                             @enderror
                             <label class="custom-control custom-checkbox mt-4">
-                                <input type="checkbox" id="terms" name="terms" class="custom-control-input @error('password') is-invalid @enderror" required>
+                                <input type="checkbox" id="terms" name="terms" class="custom-control-input @error('terms') is-invalid @enderror" required>
                                 <span class="custom-control-label">Agree the <a href="terms.html">terms and policy</a></span>
                             </label>
                             <div class="container-login100-form-btn">
