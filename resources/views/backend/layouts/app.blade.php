@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
 
     <!-- META DATA -->
@@ -35,7 +34,7 @@
 
 </head>
 
-<body class="app sidebar-mini ltr light-mode">
+<body class="app sidebar-mini ltr">
 
     <!-- GLOBAL-LOADER -->
     <div id="global-loader">

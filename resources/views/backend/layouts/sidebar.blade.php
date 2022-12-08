@@ -18,6 +18,7 @@
                     <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
                 </svg></div>
             <ul class="side-menu">
+                @hasrole('Admin')
                 <li class="sub-category">
                     <h3>Admin Roles</h3>
                 </li>
@@ -27,10 +28,11 @@
                             class="side-menu__label">Users</span><i
                             class="angle fe fe-chevron-right"></i></a>
                             <ul class="slide-menu">
-                                <li class="side-menu-label1"><a href="javascript:void(0)">Managed Users</a></li>
-                                <li><a href="maps1.html" class="slide-item">List Users</a></li>
+                                <li class="side-menu-label1"><a href="javascript:void(0)">Manage Users</a></li>
+                                <li><a href="{{ route('users.index') }}" class="slide-item">List Users</a></li>
                             </ul>
                 </li>
+                @endrole
             </ul>
             <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
                     width="24" height="24" viewBox="0 0 24 24">
